@@ -13,6 +13,8 @@ public class RateLimiterConfig {
         KeyResolver keyResolver = new KeyResolver() {
             @Override
             public Mono<String> resolve(ServerWebExchange exchange) {
+                //我现在修改了这里
+                //还不错哦
 //                String value =
 //                        exchange.getRequest().getQueryParams().getFirst("userId");
                 String hostName = exchange.getRequest().getRemoteAddress().getAddress().getHostName();

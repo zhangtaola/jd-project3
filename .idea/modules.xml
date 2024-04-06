@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jd-back/jd-back.iml" filepath="$PROJECT_DIR$/jd-back/jd-back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-common/jd-common.iml" filepath="$PROJECT_DIR$/jd-common/jd-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-back/jd-gateway/jd-gateway.iml" filepath="$PROJECT_DIR$/jd-back/jd-gateway/jd-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-back/jd-goods/jd-goods.iml" filepath="$PROJECT_DIR$/jd-back/jd-goods/jd-goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-common/jd-mapper/jd-mapper.iml" filepath="$PROJECT_DIR$/jd-common/jd-mapper/jd-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-common/jd-pojo/jd-pojo.iml" filepath="$PROJECT_DIR$/jd-common/jd-pojo/jd-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-common/jd-until/jd-until.iml" filepath="$PROJECT_DIR$/jd-common/jd-until/jd-until.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jd-back/jd-user/jd-user.iml" filepath="$PROJECT_DIR$/jd-back/jd-user/jd-user.iml" />
+    </modules>
+  </component>
+</project>

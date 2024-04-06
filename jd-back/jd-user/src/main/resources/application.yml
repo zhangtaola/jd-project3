@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: jd-user #微服务的名字，用于注册到ncaos
+
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848 #ncaos控制台的ip地址和端口号
+#        username: nacos #ncaos登录的账号
+#        password: nacos #ncaos登录的密码
+#        group: DEFULT_GROUP
+#        namespace: b8fca99a-4bc3-4bb4-b6ce-2ce5361f34c4
+
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1/ecard
+#    username: root
+#    password: 123456
+feign:
+  circuitbreaker:
+    enabled: true
+  sentinel:
+    enabled: true
+#  client:
+#    config:
+#      connectionTimeOut: 1000 #连接超时时间
+#      readTimeout: 5000 #读取超时
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+

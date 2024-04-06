@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848 #ncaos控制台的ip地址和端口号
+      username: nacos #ncaos登录的账号
+      password: nacos #ncaos登录的密码
+      discovery:
+        group: DEFULT_GROUP
+      config:
+        namespace: b8fca99a-4bc3-4bb4-b6ce-2ce5361f34c4
+        file-extension: yml
+        name: mybatis-config
+        refresh-enabled: true
+#        shared-configs:
+#          - data-id: redis-config
+#            refresh: true
+#            group: DEFAULT_GROUP

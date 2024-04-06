@@ -1,0 +1,50 @@
+spring:
+#  redis:
+#    database: 0
+#    host: 127.0.0.1
+#    port: 6379
+#    jedis:
+#      pool:
+#        max-active: 8
+#        min-idle: 2
+  application:
+    name: jd-gateway
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8888
+    #    nacos: #统一生效
+#      username: nacos
+#      password: nacos
+#      server-addr: 127.0.0.1:8848
+#      discovery:
+#        group: DEFULT_GROUP
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启动态路由
+
+#    gateway:
+#      routes:
+#        - id: jd-user #路由的名字，自己取
+#          uri: lb://jd-user  #要转发调整的微嚴务的名字loadBolancer
+#          predicates: #断言（是否满足路由转发的条件）
+#            - Path=/jd-user/**
+#          filters:
+#            - StripPrefix=1
+#            - name: RequestRateLimiter
+#              args:
+#                #允许用户每秒处理的请求数。设置的数值就代表 每秒向令牌桶添加多少个令牌
+#                redis-rate-limiter.replenishRate: 1
+#                #令牌桶的容量，即允许在 1 秒内完成的最大请求数。设置为 0 则表示拒绝所有请求
+#                redis-rate-limiter.burstCapacity: 1
+#                # 一个引用名为 userKeyResolver 的 bean 的 SpEL 表达式
+#                key-resolver: "#{@userKeyResolver}"
+#
+#
+#        - id: my-goods
+#          uri: lb://jd-goods  #要转发调整的微嚴务的名字loadBolancer
+#          predicates: #断言（是否满足路由转发的条件）
+#             - Path=/my-goods/**
+#          filters: #转发之前需要去掉1层路径
+#             - StripPrefix=1

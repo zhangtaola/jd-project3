@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jd-pojo" />
+        <module name="jd-until" />
+        <module name="jd-gateway" />
+        <module name="jd-mapper" />
+        <module name="jd-user" />
+        <module name="jd-goods" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jd-back" target="1.8" />
+      <module name="jd-common" target="1.8" />
+      <module name="jd-gateway" target="1.8" />
+      <module name="jd-goods" target="1.8" />
+      <module name="jd-mapper" target="1.8" />
+      <module name="jd-pojo" target="1.7" />
+      <module name="jd-until" target="1.8" />
+      <module name="jd-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
